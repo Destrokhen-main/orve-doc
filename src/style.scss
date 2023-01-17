@@ -1,0 +1,140 @@
+.header {
+  padding: 10px 10px;
+  margin-bottom: 5px;
+  background-color: #f3f3fe;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  &__img {
+    width: 30px;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  width: 100%;
+  height: 60px;
+  background-color: #f3f3fe;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+
+  &__link {
+    display: flex;
+    gap: 10px;
+  }
+}
+
+body {
+  height: 100vh;
+  font-family: "ubuntu";
+  font-weight: normal;
+  font-style: normal;
+}
+
+h3, h2 {
+  font-weight: bold;
+  color: black;
+}
+
+.container-fluid {
+  height: 100%;
+}
+
+.row {
+  height: 100%;
+}
+
+.sidebar {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  background-color: #f3f3fe;
+  border-top-right-radius : 5px;
+  border-bottom-right-radius : 5px;
+  padding-top: 10px;
+
+  &__item {
+    color: grey;
+    text-decoration: none;
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      color: rgb(77, 77, 77)
+    }
+  }
+
+  &__active {
+    color: black;
+    font-size: 18px;
+    text-decoration: underline;
+
+    &:hover {
+      color: black;
+    }
+  }
+}
+
+.content-part {
+  padding-top: 15px;
+  padding-left: 20px;
+  background-color: #f3f3fe;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.code-pack {
+  padding: 10px 10px;
+  background-color: #c9c9c94d;
+  border-radius: 5px;
+
+  & pre {
+    margin-bottom: 0;
+  }
+}
+
+.selected-btn {
+  background: #d6d6d6;
+}
+
+.btn-sel {
+  border: none;
+  min-width: 60px;
+  border: 1px solid #c9c9c9;
+
+  &:first-child {
+    border-top-left-radius: 5px;
+  }
+  
+  &:last-child {
+    border-top-right-radius: 5px;
+  }
+}
+
+.example-window {
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  padding: 10px;
+}
+
+.btn-fff {
+  border:none;
+  background: transparent;
+}
+
+.animated-file {
+  animation: anim 3s linear infinite;
+}
+
+@keyframes anim {
+  0% {
+    transform: rotateX(360deg);
+  }
+  50% {
+    transform: rotateX(180deg);
+  }
+}

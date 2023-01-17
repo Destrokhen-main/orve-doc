@@ -1,0 +1,42 @@
+{
+  "name": "doc-orve",
+  "version": "1.0.0",
+  "description": "doc-orve",
+  "main": "public/index.js",
+  "scripts": {
+    "dev": "webpack serve --mode development",
+    "build": "webpack --mode production"
+  },
+  "keywords": [
+    "orve",
+    "Doc"
+  ],
+  "author": "Destrokhen <armagiddon19@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.18.13",
+    "@babel/plugin-syntax-jsx": "^7.18.6",
+    "@babel/preset-env": "^7.18.10",
+    "@babel/preset-react": "^7.18.6",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "node-sass": "^7.0.1",
+    "sass-loader": "^13.0.2",
+    "source-map-loader": "^4.0.1",
+    "style-loader": "^3.3.1",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.10.0"
+  },
+  "dependencies": {
+    "highlighter": "^0.1.0",
+    "log-beautify": "^1.2.0",
+    "marked": "^4.2.12",
+    "orve": "^0.21.3",
+    "orve-router": "https://github.com/Destrokhen-main/Simple-Reactive-router.git",
+    "root-require": "^0.3.1"
+  }
+}
