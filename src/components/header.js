@@ -23,7 +23,7 @@ export default function() {
       </div>
       <div>
         <select class="header__lang" onChange={changeLang}>
-          <option value="RU">Russian</option>
+          <option value="RU">Русский</option>
           <option value="EN">English</option>
         </select>
       </div>

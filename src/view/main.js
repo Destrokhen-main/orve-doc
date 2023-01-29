@@ -3,28 +3,28 @@ import orve from "orve";
 import Title from "../components/utils/MainTitle";
 import SubTitle from "../components/utils/SubTitle"
 
-export default () => {
+export default function(){
   return (
     <div>
-      <Title>Добро пожаловать в ORVE</Title>
+      <Title>{this.lang.langObject.main_message1}</Title>
       <SubTitle>
-        Зачем нужен?
+        {this.lang.langObject.main_message2}
       </SubTitle>
       <p>
-        Библиотека нужна для создания SPA.
+        {this.lang.langObject.main_message3}
       </p>
       <p>
-        Данная библиотека пытается предложить свой подход для реактивных библиотек.<br />
-        На данный момент библиотека развивается медленно, но Вы можете помочь мне и сообществу, которое будет ей пользоваться в будущем.
+        {this.lang.langObject.main_message4}<br />
+        {this.lang.langObject.main_message41}
       </p>
       <SubTitle>
-        Как помочь?
+        {this.lang.langObject.main_message5}
       </SubTitle>
       <p>
-        Весь исходный код лежит на Github <br />
-        <a target="blank" href="https://github.com/Destrokhen-main/Simple-Reactive-npm-project">Ссылка на webpack проект. Используйте его для разработки)</a> <br />
-        <a target="blank" href="https://github.com/Destrokhen-main/Simple-Reactive-npm">Ссылка на npm пакет</a><br />
-        <a target="blank" href="https://github.com/Destrokhen-main/Orve-Documentation" >(GITHUB) Ссылка на эту документацию (сделано с помощью orve)</a>
+        {this.lang.langObject.main_message6} <br />
+        <a target="blank" href="https://github.com/Destrokhen-main/Simple-Reactive-npm-project">{this.lang.langObject.main_message7}</a> <br />
+        <a target="blank" href="https://github.com/Destrokhen-main/Simple-Reactive-npm">{this.lang.langObject.main_message8}</a><br />
+        <a target="blank" href="https://github.com/Destrokhen-main/Orve-Documentation" >{this.lang.langObject.main_message9}</a>
       </p>
     </div>
   )
