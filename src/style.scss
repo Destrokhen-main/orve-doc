@@ -8,6 +8,17 @@
   &__img {
     width: 30px;
   }
+
+  &__lang {
+    border: none;
+    padding: 0px 5px;
+    border-radius: 5px;
+    background: none;
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
 }
 
 .footer {

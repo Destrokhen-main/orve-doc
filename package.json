@@ -35,7 +35,7 @@
     "highlighter": "^0.1.0",
     "log-beautify": "^1.2.0",
     "marked": "^4.2.12",
-    "orve": "^0.21.3",
+    "orve": "^0.22.3",
     "orve-router": "https://github.com/Destrokhen-main/Simple-Reactive-router.git",
     "root-require": "^0.3.1"
   }

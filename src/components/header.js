@@ -2,8 +2,12 @@ import orve, { ref, effect } from "orve"
 
 import logo from "../../public/favicon.ico"
 
-export default () => {
+export default function() {
   const i = ref(0);
+
+  const changeLang = (e) => {
+    this.lang.selectedLang.value = e.target.value;
+  }
 
   return (
     <div class="header d-flex justify-content-between align-items-center">
@@ -16,6 +20,12 @@ export default () => {
       }, [ i ])}>
         <img class="header__img" src={logo} onClick={() => i.value += 1} />
         <span><a href="#/" style="color:black; text-decoration: none">ORVE</a></span>
+      </div>
+      <div>
+        <select class="header__lang" onChange={changeLang}>
+          <option value="RU">Russian</option>
+          <option value="EN">English</option>
+        </select>
       </div>
     </div>
   )

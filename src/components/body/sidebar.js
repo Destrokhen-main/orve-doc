@@ -21,7 +21,7 @@ export default function (props) {
             }, [ RouterLink ])}
               onClick={() => {this.$router.push(e.path)}}
 
-            >{e.meta.title}</a>
+            >{this.lang.langObject[e.meta.key]}</a>
           )
         })}
       </div>

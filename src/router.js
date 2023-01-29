@@ -22,7 +22,8 @@ const router = [
     path: "/",
     component: Main,
     meta: {
-      title: "Главная"
+      title: "Главная",
+      key: "main"
     }
   },
   {
@@ -30,7 +31,8 @@ const router = [
     component: Webpack,
     meta: {
       title: "Проект",
-      header: "Комопненты в ORVE"
+      header: "Комопненты в ORVE",
+      key: "project"
     }
   },
   {
@@ -38,7 +40,8 @@ const router = [
     component: Component,
     meta: {
       title: "Компонент",
-      header: "Комопненты в ORVE"
+      header: "Комопненты в ORVE",
+      key: "component"
     }
   },
   {
@@ -46,7 +49,8 @@ const router = [
     component: Event,
     meta: {
       title: "События (Event)",
-      header: "Event"
+      header: "Event",
+      key: "event"
     }
   },
   {
@@ -54,7 +58,8 @@ const router = [
     component: Ref,
     meta: {
       title: "Реактивные переменные",
-      header: "Ref"
+      header: "Ref",
+      key: "ref"
     }
   },
   {
@@ -62,7 +67,8 @@ const router = [
     component: RefA,
     meta: {
       title: "Отрисовка списков",
-      header: "Комопненты в ORVE"
+      header: "Комопненты в ORVE",
+      key: "refA"
     }
   },
   {
@@ -70,7 +76,8 @@ const router = [
     component: RefC,
     meta: {
       title: "Реактивный компонент",
-      header: "Комопненты в ORVE"
+      header: "Комопненты в ORVE",
+      key: "refC"
     }
   },
   {
@@ -78,7 +85,8 @@ const router = [
     component: Effect,
     meta: {
       title: "Effect",
-      header: "Комопненты в ORVE"
+      header: "Комопненты в ORVE",
+      key: "effect"
     }
   },
   {
@@ -86,7 +94,8 @@ const router = [
     component: Hooks,
     meta: {
       title: "Хуки жизненого цикла",
-      header: "Комопненты в ORVE"
+      header: "Комопненты в ORVE",
+      key: "hooks"
     }
   },
   {
@@ -94,7 +103,8 @@ const router = [
     component: RefL,
     meta: {
       title: "Доступ к HTML Element",
-      header: "Комопненты в ORVE"
+      header: "Комопненты в ORVE",
+      key: "refL"
     }
   },
   {
@@ -102,7 +112,8 @@ const router = [
     component: Watch,
     meta: {
       title: "Watch",
-      header: "Комопненты в ORVE"
+      header: "Комопненты в ORVE",
+      key: "watch"
     }
   },
   {
@@ -110,7 +121,8 @@ const router = [
     component: Fragment,
     meta: {
       title: "Фрагменты",
-      header: "Комопненты в ORVE"
+      header: "Комопненты в ORVE",
+      key: "fragment"
     }
   },
   {
@@ -118,7 +130,8 @@ const router = [
     component: Utils,
     meta: {
       title: "Кастомные теги",
-      header: "Комопненты в ORVE"
+      header: "Комопненты в ORVE",
+      key: "cTag"
     }
   },
   {
@@ -126,7 +139,8 @@ const router = [
     component: Style,
     meta: {
       title: "Стили для тегов",
-      header: "Комопненты в ORVE"
+      header: "Комопненты в ORVE",
+      key: "style"
     }
   },
   {
@@ -134,7 +148,8 @@ const router = [
     component: Async,
     meta: {
       title: "Асинхронный запрос",
-      header: "Комопненты в ORVE"
+      header: "Комопненты в ORVE",
+      key: "async"
     }
   },
   {
@@ -142,7 +157,8 @@ const router = [
     component: Plugin,
     meta: {
       title: "Плагин",
-      header: "Комопненты в ORVE"
+      header: "Комопненты в ORVE",
+      key: "plugin"
     }
   },
 ];
