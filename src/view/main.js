@@ -14,8 +14,7 @@ export default function(){
         {this.lang.langObject.main_message3}
       </p>
       <p>
-        {this.lang.langObject.main_message4}<br />
-        {this.lang.langObject.main_message41}
+        {this.lang.langObject.main_message4}
       </p>
       <SubTitle>
         {this.lang.langObject.main_message5}

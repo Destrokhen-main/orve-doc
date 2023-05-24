@@ -1,3 +1,5 @@
+import orve from "orve";
+
 export default {
   /* router */
   main: "Home",
@@ -22,8 +24,7 @@ export default {
   main_message1: "Welcome to ORVE",
   main_message2: "Why is it needed?",
   main_message3: "The library is needed to create a SPA.",
-  main_message4: "This library tries to offer its own approach for reactive libraries.",
-  main_message41: "At the moment, the library is developing slowly, but you can help me and the community that will use it in the future.",
+  main_message4EN: ["This library tries to offer its own approach for reactive libraries.", <br />, "At the moment, the library is developing slowly, but you can help me and the community that will use it in the future."],
   main_message5: "How to help?",
   main_message6: "All source code is on Github",
   main_message7: "Link to webpack project. Use it for development)",

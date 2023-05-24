@@ -1,6 +1,6 @@
 import { ref, watch } from "orve";
 import RU from "./assets/lang/RU.js";
-import EN from "./assets/lang/EN.js"
+import EN from "./assets/lang/EN.js";
 
 export default {
   async setup(e) {
@@ -9,19 +9,28 @@ export default {
     const obj = ref({});
 
     Object.keys(RU).forEach((k) => {
-      obj[k] = RU[k]
+      if (Array.isArray(RU[k])) {
+        obj[k.replace("RU", "")] = RU[k]
+      } else 
+        obj[k] = RU[k]
     });
     
     const selectedLang = ref(defaultLang);
 
-    watch(async (n, o) => {
+    watch((n, o) => {
       if (n !== o) {
-        const kk = n === "RU" ? RU : EN
+        const kk = n === "RU" ? RU : EN;
         Object.keys(kk).forEach((k) => {
-          obj[k] = kk[k]
+          if (Array.isArray(kk[k])) {
+            kk[k].forEach((e, i) => {
+              obj[k.replace(n, "")].value[i] = e;
+            })
+          } else {
+            obj[k] = kk[k]
+          }
         });
       }
-    }, selectedLang)
+    }, selectedLang);
 
     e.context["lang"] = {
       selectedLang: selectedLang,

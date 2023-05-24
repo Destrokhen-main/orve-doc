@@ -1,9 +1,9 @@
-import { Orve, createApp } from "orve";
+import orve, { Orve, createApp } from "orve";
 
 import App from "./App";
 import router from "./router";
 import "highlight.js/styles/github.css";
-import lan from "./langPlug";
+// import lan from "./langPlug";
 
 Orve.use(router);
 Orve.use({
@@ -11,6 +11,6 @@ Orve.use({
     console.info("*--- Кастомный script ---*", e);
   }
 });
-Orve.use(lan);
+// rve.use(lan);
 
 createApp(App).mount("#app");
